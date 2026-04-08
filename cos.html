@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="cos.css" />
+    </head>
+    <body>
+        <!-- <div class="cos">
+            <div class="cos1">
+                <h1>LOGIN PAGE</h1>
+            </div>
+            <div class="email">
+                <h1>ENTER EMAIL</h1>
+                <input id="email" type="text" placeholder="Enter your email" />
+            </div>
+            <br />
+            <div class="email">
+                <h1>ENTER PASSWORD</h1>
+                <input id="password" type="password" />
+            </div>
+            <br /><br />
+            <div class="real"><input type="checkbox" />REMEMBER PASSWORD</div>
+            <br />
+            <div class="log">
+                <button onclick="login()">LOGIN</button>
+            </div>
+            <p id="message" style="text-align: center"></p>
+        </div> -->
+
+        <h2>User Panel</h2>
+
+        <p id="role">Role: user</p>
+
+        <button onclick="becomeAdmin()">Become Admin</button>
+
+        <script>
+            let user = {
+                username: "john",
+                role: "user",
+            };
+
+            function becomeAdmin() {
+                user.role = "admin";
+                document.getElementById("role").innerText =
+                    "Role: " + user.role;
+            }
+
+            // let commonPasswords = ["123456", "password", "admin", "qwerty"];
+
+            // function login() {
+            //     let password = document.getElementById("password").value;
+
+            //     if (commonPasswords.includes(password)) {
+            //         document.getElementById("message").innerText =
+            //             "Hacked! Weak password detected.";
+            //     } else {
+            //         document.getElementById("message").innerText =
+            //             "Safe (for now)";
+            //     }
+            // }
+
+            // let age = 18;
+
+            // if (age <= 12) {
+            //     alert("You are a child");
+            // } else if (age <= 17) {
+            //     alert("You are a Teenager");
+            // } else {
+            //     alert("You are an adult!!!");
+            // }
+
+            // function login() {
+            //     let email = document.getElementById("email").value;
+            //     let password = document.getElementById("password").value;
+            //     if (email === "admin@example.com" && password === "password") {
+            //         window.location.href = "dashboard.html";
+            //     } else {
+            //         alert("Invalid email or password.");
+            //     }
+            // }
+
+            // function login() {
+            //     let email = document.getElementById("email").value;
+            //     let password = document.getElementById("password").value;
+
+            //     // Simulated bad logic
+            //     if (email === "admin@example.com" && password === "password") {
+            //         document.getElementById("message").innerText =
+            //             "Welcome Admin!";
+            //     } else if (password.includes("OR")) {
+            //         document.getElementById("message").innerText =
+            //             "Login Bypassed!";
+            //     } else {
+            //         document.getElementById("message").innerText =
+            //             "Access Denied";
+            //     }
+            // }
+        </script>
+    </body>
+</html>

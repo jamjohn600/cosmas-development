@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <body>
+        <h2>Client Request Simulation</h2>
+
+        <button onclick="sendRequest()">Request Data</button>
+
+        <p id="response"></p>
+
+        <script>
+            function sendRequest() {
+                // Simulated server response
+                let serverResponse = {
+                    status: 200,
+                    data: "Welcome to the server!",
+                };
+
+                document.getElementById("response").innerText =
+                    "Server says: " + serverResponse.data;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <body>
+        <h2>Login Request</h2>
+
+        <input type="text" id="username" placeholder="Username" /><br /><br />
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        /><br /><br />
+
+        <button onclick="send()">Login</button>
+
+        <script>
+            function send() {
+                let username = document.getElementById("username").value;
+                let password = document.getElementById("password").value;
+
+                // Simulated "interceptor"
+                console.log("Captured Data:", "Username-", username, "Password-", password);
+
+                alert("Request sent (but data was intercepted!)");
+            }
+        </script>
+    </body>
+</html>

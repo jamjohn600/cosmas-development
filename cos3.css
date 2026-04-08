@@ -1,0 +1,43 @@
+body{
+    background-color: blue;
+}
+
+.git{
+    width: 700px;
+    height: 570px;
+    background-color: white;
+    margin-left: 300px;
+    border-radius: 2%;
+    margin-top: 60px;
+}
+
+.git h2{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+
+.git input{
+    width: 500px;
+    height: 40px;
+    margin-left: 70px;
+}
+
+
+
+
+
+.git  button{
+    width: 450px;
+    height: 50px;
+    background-color: red;
+    border-radius: 2%;
+    border: none;
+    font-size: 30px;
+    margin-left: 70px;
+    
+}

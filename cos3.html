@@ -1,7 +1,14 @@
-<!doctype html>
-<html>
-    <body>
-        <h2>Login Request</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cos3.css">
+</head>
+<body>
+    <div class="git">
+    <h2>Login Request</h2>
 
         <input type="text" id="username" placeholder="Username" /><br /><br />
         <input
@@ -10,18 +17,34 @@
             placeholder="Password"
         /><br /><br />
 
-        <button onclick="send()">Login</button>
+        <button onclick="greetings()">Login</button><br><br>
+        <button onclick="login()">log</button><br><br>
+
+
 
         <script>
-            function send() {
-                let username = document.getElementById("username").value;
-                let password = document.getElementById("password").value;
-
-                // Simulated "interceptor"
-                console.log("Captured Data:", "Username-", username, "Password-", password);
-
-                alert("Request sent (but data was intercepted!)");
+            function greetings(){
+                alert('welcome to this website')
             }
+
+            function login(){
+
+            
+              let age = 18;
+
+             if (age <= 12) {
+                 alert("You are a child");
+             } else if (age <= 17) {
+                 alert("You are a Teenager");
+             } else {
+                 alert("You are an adult!!!");
+             }
+            }
+
+            
+
+            
         </script>
-    </body>
+    </div>    
+</body>
 </html>

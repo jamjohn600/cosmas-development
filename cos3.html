@@ -1,50 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cos3.css">
-</head>
-<body>
-    <div class="git">
-    <h2>Login Request</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="cos3.css" />
+    </head>
+    <body>
+        <div class="git">
+            <h2>Login Request</h2>
 
-        <input type="text" id="username" placeholder="Username" /><br /><br />
-        <input
-            type="password"
-            id="password"
-            placeholder="Password"
-        /><br /><br />
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+            /><br /><br />
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+            /><br /><br />
 
-        <button onclick="greetings()">Login</button><br><br>
-        <button onclick="login()">log</button><br><br>
+            <button onclick="greetings()">Login</button><br /><br />
+            <button onclick="login()">log</button><br /><br />
 
+            <script>
+                function greetings() {
+                    alert("welcome to this website");
+                }
 
+                function login() {
+                    let age = 18;
 
-        <script>
-            function greetings(){
-                alert('welcome to this website')
-            }
+                    if (age <= 12) {
+                        alert("You are a child");
+                    } else if (age <= 17) {
+                        alert("You are a Teenager");
+                    } else {
+                        alert("You are an adult!!!");
+                    }
+                }
 
-            function login(){
+                function add(a, b) {
+                    alert(a + b);
+                }
 
-            
-              let age = 18;
-
-             if (age <= 12) {
-                 alert("You are a child");
-             } else if (age <= 17) {
-                 alert("You are a Teenager");
-             } else {
-                 alert("You are an adult!!!");
-             }
-            }
-
-            
-
-            
-        </script>
-    </div>    
-</body>
+                add(20, 10);
+            </script>
+        </div>
+    </body>
 </html>
